@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.DashboardController">
+   <children>
+      <Rectangle arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="7.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="586.0" />
+      <Label layoutX="213.0" layoutY="19.0" text="DashBoard" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="addCustomerBtn" layoutX="242.0" layoutY="123.0" onAction="#addCustomerBtnOnAction" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: blue;" text="Add Customer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="viewCustomerBtn" layoutX="242.0" layoutY="183.0" onAction="#viewCustomerBtnOnAction" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: blue;" text="View Customer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="searchCustomerBtn" layoutX="242.0" layoutY="244.0" onAction="#searchCustomerBtnOnAction" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: blue;" text="Search Customer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="deleteCustomerBtn" layoutX="242.0" layoutY="304.0" onAction="#deleteCustomerBtnOnAction" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: red;" text="Delete Customer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
